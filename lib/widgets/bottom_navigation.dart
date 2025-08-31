@@ -55,7 +55,7 @@ class BottomNavigation extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: TextButton(
                   onPressed: onCreate,
-                  child: Text('Mark as Finished'),
+                  child: Text('Save note'),
                 ),
               ),
       ),
@@ -107,7 +107,7 @@ class BottomActionSection extends StatelessWidget {
             ),
             buildTile(
               icon: Icons.check_rounded,
-              label: 'Mark as Finished',
+              label: 'Save note',
               onTap: () {
                 context.read<NoteBloc>().add(
                   UpdateNoteEvent(id: id, title: title, content: content),

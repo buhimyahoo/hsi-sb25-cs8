@@ -36,6 +36,7 @@ class CustomBigText extends StatelessWidget {
         fontWeight: FontWeight.w700,
         fontFamily: 'Inter',
       ),
+      maxLines: 2,
     );
   }
 }
@@ -56,7 +57,7 @@ class CustomSmallText extends StatelessWidget {
         fontWeight: FontWeight.w400,
         fontFamily: 'Inter',
       ),
-      maxLines: 7,
+      maxLines: 5,
     );
   }
 }
